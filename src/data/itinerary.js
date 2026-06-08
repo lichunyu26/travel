@@ -1,7 +1,7 @@
 // 每日行程数据
 // waypoint keys 引用 waypoints.js 中的定义
 
-const IMG = '/chuangxi-images'
+const IMG = './chuangxi-images'
 
 export const itineraryDays = [
   {

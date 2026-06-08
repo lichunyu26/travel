@@ -1,7 +1,7 @@
 // 途经点数据 - 坐标 + 多图片 + 描述
-// 图片路径基于 public/chuangxi-images/
+// 图片路径基于 public./chuangxi-images/
 
-const IMG = '/chuangxi-images'
+const IMG = './chuangxi-images'
 
 export const waypointData = {
   // ===== D1-2 成都 =====

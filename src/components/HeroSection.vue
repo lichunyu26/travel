@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-const bgImage = '/chuangxi-images/post2/06-格聂之眼.webp'
+const bgImage = './chuangxi-images/post2/06-格聂之眼.webp'
 </script>
 
 <style scoped>

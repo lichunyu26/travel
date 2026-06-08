@@ -1,5 +1,5 @@
 // 美食攻略数据 - 整合 Post7-Post13
-const IMG = '/chuangxi-images'
+const IMG = './chuangxi-images'
 
 // 川西必吃美食清单
 export const mustEatFoods = [

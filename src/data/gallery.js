@@ -1,5 +1,5 @@
 // 精选图库数据
-const IMG = '/chuangxi-images'
+const IMG = './chuangxi-images'
 
 export const galleryPhotos = [
   // 🏔️ 雪山
