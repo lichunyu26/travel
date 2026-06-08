@@ -1,0 +1,132 @@
+// 每日行程数据
+// waypoint keys 引用 waypoints.js 中的定义
+
+const IMG = '/chuangxi-images'
+
+export const itineraryDays = [
+  {
+    day: 1, date: '7月25日', weekday: '周六', elevation: '500m',
+    title: '✈️ 抵达成都 · 市区闲逛',
+    cover: `${IMG}/post1/01-川西小环线封面.webp`,
+    highlight: false,
+    route: null,
+    waypoints: [
+      { key: 'chengdu', dot: 'blue' },
+      { key: 'kuanzhai', dot: 'green' },
+      { key: 'chunxi', dot: 'green' },
+    ],
+    tip: '第一晚建议早休息，调整状态为后续高海拔行程做准备。🍲 成都美食推荐：小龙坎火锅、瓜串串（人均56）、打牙祭必吃榜（人均54）、抚琴夜市',
+  },
+  {
+    day: 2, date: '7月26日', weekday: '周日', elevation: '500m',
+    title: '🐼 成都深度游 · 取车采购',
+    cover: null,
+    highlight: false,
+    route: null,
+    waypoints: [
+      { key: null, name: '武侯祠', desc: '三国文化圣地，诸葛亮祠堂', dot: 'green' },
+      { key: null, name: '锦里古街', desc: '成都版"清明上河图"，小吃一条街', dot: 'green' },
+      { key: null, name: '大熊猫繁育研究基地', desc: '近距离看国宝，建议下午人少时去', dot: 'green' },
+      { key: null, name: '🚗 神州租车取车（坦克300）', desc: '检查车况、轮胎、备胎、油量', dot: 'amber' },
+      { key: null, name: '🛒 采购物资', desc: '氧气瓶、红景天、零食干粮、防晒霜', dot: 'amber' },
+    ],
+    tip: '取车时仔细检查轮胎、备胎、油量，确认保险覆盖范围',
+  },
+  {
+    day: 3, date: '7月27日', weekday: '周一', elevation: '2000m',
+    title: '🏔️ 成都 → 四姑娘山 → 丹巴',
+    cover: `${IMG}/waypoint-images/route/四姑娘山/1.jpg`,
+    highlight: false,
+    route: { distance: '约 350km', duration: '7-8小时' },
+    waypoints: [
+      { key: 'dujiangyan', dot: 'green' },
+      { key: 'balangshan', dot: 'red' },
+      { key: 'siguniangshan', dot: 'green' },
+      { key: 'danba', dot: 'green' },
+    ],
+    tip: '今天开始适应海拔，不要剧烈运动，多喝水',
+  },
+  {
+    day: 4, date: '7月28日', weekday: '周二', elevation: '3460m',
+    title: '🏘️ 丹巴 → 八美 → 塔公 → 新都桥',
+    cover: `${IMG}/waypoint-images/route/新都桥/1.jpg`,
+    highlight: false,
+    route: { distance: '约 170km', duration: '4-5小时（走走停停）' },
+    waypoints: [
+      { key: 'jiaju', dot: 'green', price: '🎫 50元' },
+      { key: 'moshi', dot: 'green', price: '🎫 60元' },
+      { key: 'tagong', dot: 'green' },
+      { key: 'xinduqiao', dot: 'green' },
+    ],
+    tip: '今天行程轻松，沿途风景极美，适合慢节奏拍照',
+  },
+  {
+    day: 5, date: '7月29日', weekday: '周三', elevation: '3750m',
+    title: '🛤️ 新都桥 → 理塘 → 稻城',
+    cover: `${IMG}/waypoint-images/route/卡子拉山垭口/1.jpg`,
+    highlight: false,
+    route: { distance: '约 350km', duration: '7-8小时' },
+    waypoints: [
+      { key: 'gaoersi', dot: 'red' },
+      { key: 'tianlu', dot: 'green' },
+      { key: 'kazila', dot: 'red' },
+      { key: 'maoya', dot: 'green' },
+      { key: 'litang', dot: 'green' },
+      { key: 'haizishan', dot: 'green' },
+    ],
+    tip: '今天海拔持续升高，注意观察同伴状态，如有严重高反及时吸氧',
+  },
+  {
+    day: 6, date: '7月30日', weekday: '周四', elevation: '3900-4100m',
+    title: '💎 稻城亚丁 · 短线（珍珠海）',
+    cover: `${IMG}/waypoint-images/yading/珍珠海/1.jpg`,
+    highlight: false,
+    route: null,
+    waypoints: [
+      { key: 'shangriLa', dot: 'green' },
+      { key: 'chonggu', dot: 'green' },
+      { key: 'zhenzhu', dot: 'green' },
+    ],
+    tip: '短线往返约3-4小时，轻松适应海拔。为明天长线养精蓄锐。🍲 晚餐推荐：扎西德勒·牦牛藏餐（双人餐¥158），必点烤藏香猪排、牦牛肉饼',
+  },
+  {
+    day: 7, date: '7月31日', weekday: '周五', elevation: '4500-4700m',
+    title: '⭐ 稻城亚丁 · 长线（牛奶海+五色海）',
+    cover: `${IMG}/waypoint-images/yading/牛奶海/1.jpg`,
+    highlight: true,
+    badge: '核心',
+    route: null,
+    waypoints: [
+      { key: 'luorong', dot: 'green' },
+      { key: 'niunai', dot: 'green' },
+      { key: 'wuse', dot: 'green' },
+    ],
+    tip: '全程徒步约10-12小时！电瓶车往返80元强烈建议购买。最后1km很陡，量力而行。带足氧气、干粮、水。',
+  },
+  {
+    day: 8, date: '8月1日', weekday: '周六', elevation: '3460m',
+    title: '🏛️ 稻城 → 理塘 → 新都桥（返程）',
+    cover: `${IMG}/waypoint-images/return/稻城白塔/1.jpg`,
+    highlight: false,
+    route: { distance: '约 350km', duration: '7-8小时' },
+    waypoints: [
+      { key: 'baita', dot: 'green' },
+      { key: null, name: '途经理塘', desc: '原路返回，换个角度欣赏高原风光', dot: 'blue' },
+    ],
+    tip: '返程路上注意安全驾驶，高原路段弯多坡陡',
+  },
+  {
+    day: 9, date: '8月2日', weekday: '周日', elevation: '500m',
+    title: '🏠 康定 → 泸定 → 雅安 → 成都',
+    cover: `${IMG}/waypoint-images/return/折多山垭口/1.jpg`,
+    highlight: false,
+    route: { distance: '约 350km', duration: '6-7小时' },
+    waypoints: [
+      { key: 'zheduo', dot: 'red' },
+      { key: 'kangding', dot: 'green' },
+      { key: 'luding', dot: 'green' },
+      { key: 'yaan', dot: 'green' },
+    ],
+    tip: '如需当晚飞回，建议预留充足时间还车+赶往机场',
+  },
+]
